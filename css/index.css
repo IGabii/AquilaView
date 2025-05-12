@@ -115,7 +115,7 @@ figure{
 }
 
 .container-img img{
-    filter: blur(1px);
+    filter: blur(0.2px);
 }
 
 .move{
