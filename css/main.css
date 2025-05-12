@@ -1,0 +1,275 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #141414;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: .2s;
+    
+}
+
+figure{
+    width: 200px;
+}
+
+.main {
+    display: flex;
+}
+
+.menu {
+    padding: 10px 0px;
+    background:#020202;
+    border-right:solid #34f200;
+    box-shadow:#34f200 0px 1px 50px;
+    color:#fff;
+    z-index: 5;
+
+}
+
+.menu-content{
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.menu-content h1{
+    padding: 0 40px;
+}
+
+.menu-content img{
+    filter:drop-shadow(1px 1px 30px #34f200);
+}
+
+.menu-content li{
+    transition-duration: .2s;
+}
+
+.menu-content li:hover{
+    box-shadow: 0 0 20px #34f200;
+    background-color: #34f200 ;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 20px;
+    white-space: nowrap;
+    padding: 10px 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.galery-container{
+    display:grid;
+    padding: 30px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:20px;
+}
+
+.galery-container img{
+    filter: blur(0.5px);
+    z-index: 1;
+}
+
+.galery-container img:hover{
+    cursor:pointer;
+    transform: scale(1.05);
+}
+
+.container-img{
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: rgb(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:translateX(-100%);
+    transition:transform .4s ease-in;
+    z-index: 3;
+}
+
+.container-img img{
+    filter: blur(1px);
+}
+
+.move{
+    transform: translateX(0);
+}
+
+.img-show{
+    height: 80%;
+    display: block;
+    object-fit: contain;
+    transform:scale(0);
+    transition:transform .2s .4s;
+}
+
+.show{
+    transform: scale(1);
+}
+
+.copy{
+    position: fixed;
+    color:fff;
+    bottom:0;
+}
+
+.bx.bx-x{
+    position: absolute;
+    color:#fff;
+    top:20px;
+    right: 10px;
+    font-size: 40px;
+    cursor:pointer;
+}
+
+.content {
+    padding: 40px;
+    text-align: justify;
+}
+
+.menu button {
+    display: none;
+}
+
+.btnWP{
+    position: fixed;
+    width: 55px;
+    right:30px ;
+    color:#fff;
+    bottom:30px;
+    text-align: center;
+    z-index: 100;
+    padding: 6px;
+    transition-duration: .3s;
+}
+
+.btnWP:hover{
+    color:#34f200
+}
+
+.btnWP:active{
+    transform: scale(1.2);
+}
+
+.iconWP{
+    height: 45px;
+    width: 45px;
+}
+
+.btnCursos{
+    text-decoration: none; 
+    color:#fff;
+    border:solid #34f200;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition-duration: .2s;
+}
+
+.btnCursos:hover{
+    background-color: #32c808;
+}
+
+.btnCursos:active{
+    transform: scale(1.1);
+}
+
+.btn-cursos-container{
+    display: flex;
+    padding:50px 0 20px 0 ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tituloCursos{
+    text-align: center;
+    padding: 40px 0;
+    filter: 0 0 10px #34f200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        height: 100%;
+        padding: 0px 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+
+    .menu-content img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .menu-activo {
+        transform: translateX(0%);
+    }
+
+    .menu button {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        transform: translateX(345px);
+    }
+
+    .menu-content{
+            position: static;
+        }
+        .content {
+            padding: 20px 40px;
+        }
+    
+        .galery-index-container{
+            gap:5px
+        }
+
+        .btnCursos{
+            padding: 5px 18px;
+        }
+
+        .galery-container{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+}
