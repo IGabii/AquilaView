@@ -97,7 +97,7 @@ figure{
 .galery-container img:hover{
     cursor:pointer;
     transform: scale(0.3px);
-    filter:brightness(0.5);
+    filter:brightness(0.5px);
 }
 
 .container-img{
