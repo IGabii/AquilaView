@@ -96,7 +96,8 @@ figure{
 
 .galery-container img:hover{
     cursor:pointer;
-    transform: scale(1.05);
+    transform: scale(0.3px);
+    filter:brightness(0.5px);
 }
 
 .container-img{
@@ -116,7 +117,7 @@ figure{
 
 .container-img img{
     filter: blur(0.1px);
-    filter:brightness(0.8)
+    filter:brightness(0.8);
 }
 
 .move{
