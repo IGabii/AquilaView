@@ -115,7 +115,8 @@ figure{
 }
 
 .container-img img{
-    filter: blur(0.6px);
+    filter: blur(0.1px);
+    filter:brightness(0.8)
 }
 
 .move{
