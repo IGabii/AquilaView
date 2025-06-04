@@ -138,8 +138,10 @@ figure{
 
 .copy{
     position: fixed;
-    color:fff;
+    color:#fff;
+    text-decoration:overline #fff;
     bottom:0;
+    font-size: 25px;
 }
 
 .bx.bx-x{
@@ -147,7 +149,7 @@ figure{
     color:#fff;
     top:20px;
     right: 10px;
-    font-size: 40px;
+    font-size: 60px;
     cursor:pointer;
 }
 
@@ -217,15 +219,56 @@ figure{
 
 
 
+/* FOTOSLMGSM>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.galeryLMGSM-container{
+    padding: 60px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap:30px;
+}
+
+.galeryLMGSM-item{
+    width: 300px;
+    height: 200px;
+    transition: all ease-in .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:solid #fff;
+}
+
+.galeryLMGSM-item h3{
+    margin:4px;
+}
+
+.galeryLMGSM-item-a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.galeryLMGSM-item1{
+    background-image: url(../galeria/1raSalidaTerreno2025/1.jpg);
+    background-size: cover;
+}
+
+.galeryLMGSM-item2{
+    background-image: url(../galeria/acto25deMayo-2doGrado/1raSalidaTerreno2025.png);
+    background-size: cover;
+}
+
+.galeryLMGSM-item:hover{
+    transform: scale(1.05);
+}
 
 
 
 
 
-
-
-
-
+/* RESPONSIVE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media screen and (max-width: 768px) {
     .menu {
