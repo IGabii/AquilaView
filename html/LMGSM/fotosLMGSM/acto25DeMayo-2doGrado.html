@@ -5,27 +5,43 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="../../../css/index.css">
 <link rel="icon" href="../../../galeria/logo.png">
 <title>AquilaView</title>
 </head>
 <body>
-    <main class="main">
-        <section class="menu" id="menu">
-            <button>=</button>
-            <div class="menu-content">
-                <figure>
+    
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#" class="nav__logo">
                     <img src="../../../galeria/logo.png" alt="">
-                </figure>
-                <ul>
-                    <li><a href="../../1eraSalidaTerreno2025.html">1ª salida al Terreno 2025</a></li>
-                    <li><a href="acto25DeMayo-2doGrado.html">Acto 25 de Mayo (2ª Grado)</a></li>
-                    <li><a href="#titulo3">Proximamente</a></li>
-                    <li><a href="#titulo4">Proximamente</a></li>
-                    <li><a href="#titulo5">Proximamente</a></li>
+                </a>
+            
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">Inicio</a></li>
+
+                <!--=============== DROPDOWN 1 ===============-->
+                    <li><a href="../fotosLMGSM.html" class="nav__link">Fotos LMGSM</a></li>
+                
+                    <li><a href="https://drive.google.com/file/d/1q6SoGLhY7jnKYgQTf757WhwvKo8iToFw/view?usp=sharing" class="nav__link">Precios</a></li>
+
+                    <li><a href="#" class="nav__link">Preguntas</a></li>
                 </ul>
             </div>
-        </section>
+        </nav>
+    </header>
+    <section class="menu" id="menu"></section>
+    <h2 class="title-fotosLMGSM">Acto 25 de Mayo - 2ª Grado</h2>
         <div class="galery-container">
             <img src="../../../galeria/acto25deMayo-2doGrado/1.png" alt="Imagen 1" class="img" oncontextmenu="return false" draggable="false">
             <img src="../../../galeria/acto25deMayo-2doGrado/2.png" alt="Imagen 2" class="img" oncontextmenu="return false" draggable="false">
@@ -128,7 +144,6 @@
             </svg>
         </a>
     </main>
-    <script src="../../../JavasCript/index.js">
-    </script>
+    <script src="../../../JavasCript/index.js" ></script>
 </body>
 </html>
