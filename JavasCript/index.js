@@ -47,3 +47,43 @@ const showMenu = (toggleId, navId) =>{
     })
 }
 showMenu('nav-toggle','nav-menu')
+
+
+
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && (e.key === 's' || e.key === 'S' || e.shiftKey && e.key === 'I')) {
+    e.preventDefault();
+    }
+    if (e.key === 'F12') {
+    e.preventDefault();
+    }
+});
+
+
+// Evita clic derecho
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+
+    // Evita arrastrar imágenes
+    document.addEventListener('dragstart', function (e) {
+      e.preventDefault();
+    });
+
+    // Bloquea mantener presionado (para móviles)
+    document.addEventListener('touchstart', function (e) {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    // Bloquea atajos de teclado comunes
+    document.addEventListener('keydown', function (e) {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && (e.key === 's' || e.key === 'S')) ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i'))
+      ) {
+        e.preventDefault();
+      }
+    });
