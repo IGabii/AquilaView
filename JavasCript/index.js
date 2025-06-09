@@ -70,12 +70,12 @@ document.addEventListener('keydown', function(e) {
       e.preventDefault();
     });
 
-    // Bloquea mantener presionado (para móviles)
-    document.addEventListener('touchstart', function (e) {
-      if (e.target.tagName === 'IMG') {
+    // Bloquea mantener presionado solo en la capa de protección
+    document.querySelectorAll('.capa-bloqueo').forEach(capa => {
+      capa.addEventListener('touchstart', function (e) {
         e.preventDefault();
-      }
-    }, { passive: false });
+      }, { passive: false });
+    });
 
     // Bloquea atajos de teclado comunes
     document.addEventListener('keydown', function (e) {
