@@ -650,6 +650,12 @@ a.nav__link:hover {
             padding: 10px;
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,1fr);
-            gap:4px
+            gap:4px;
+            background-image: url(../galeria/fotosLMGSM/Background_celular.webp);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
         }
 }
