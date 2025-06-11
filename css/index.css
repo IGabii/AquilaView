@@ -603,6 +603,13 @@ a.nav__link:hover {
 /* RESPONSIVE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media screen and (max-width: 768px) {
+    body{
+        background-image: url(../galeria/fotosLMGSM/Background_celular.webp);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     .menu {
         height: 100%;
         padding: 0px 40px;
@@ -651,11 +658,5 @@ a.nav__link:hover {
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,1fr);
             gap:4px;
-            background-image: url(../galeria/fotosLMGSM/Background_celular.webp);
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            
         }
 }
