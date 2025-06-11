@@ -294,9 +294,6 @@ a.nav__link:hover {
   }
 }
 
-.galery-container{
-  gap:6px
-}
 
 /* For small devices */
 @media screen and (max-width: 340px) {
@@ -314,10 +311,6 @@ a.nav__link:hover {
   .container {
     margin-inline: auto;
   }
-
-  .galery-container{
-  gap:6px
-}
 
   .nav {
     height: calc(var(--header-height) + 2rem);
@@ -618,7 +611,7 @@ a.nav__link:hover {
         left: 0;
         transform: translateX(-100%);
         transition: 0.5s;
-        box-shadow:#34f200 0px 1px 20px;
+        
     }
 
     .menu-content img{
@@ -654,7 +647,9 @@ a.nav__link:hover {
         }
 
         .galery-container{
+            padding: 10px;
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,1fr);
+            gap:4px
         }
 }
