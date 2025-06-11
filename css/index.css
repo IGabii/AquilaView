@@ -586,6 +586,10 @@ a.nav__link:hover {
     background-image: url(../galeria/fotosLMGSM/Foto_29deMayo.webp);
     background-size: cover;
 }
+.galeryLMGSM-item5{
+    background-image: url(../galeria/fotosLMGSM/Foto_instruccionPistola_6toAno.webp);
+    background-size: cover;
+}
 
 .galeryLMGSM-item:hover{
     transform: scale(1.05);
