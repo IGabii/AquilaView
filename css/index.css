@@ -540,7 +540,7 @@ a.nav__link:hover {
 /* FOTOSLMGSM>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .galeryLMGSM-container{
-    padding: 200PX 60px;
+    padding: 200PX 20px 10px 20px;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
