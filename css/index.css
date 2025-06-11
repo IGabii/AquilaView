@@ -294,6 +294,10 @@ a.nav__link:hover {
   }
 }
 
+.galery-container{
+  gap:6px
+}
+
 /* For small devices */
 @media screen and (max-width: 340px) {
   .container {
@@ -310,6 +314,10 @@ a.nav__link:hover {
   .container {
     margin-inline: auto;
   }
+
+  .galery-container{
+  gap:6px
+}
 
   .nav {
     height: calc(var(--header-height) + 2rem);
