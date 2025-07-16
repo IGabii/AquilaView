@@ -604,7 +604,12 @@ a.nav__link:hover {
 }
 
 .galeryLMGSM-item8{
-    background-image: url(../galeria/fotosLMGSM/Foto_EntregaDeUniforme_2doAno.jpg);
+    background-image: url(../galeria/fotosLMGSM/Foto_EntregaDeUniforme_2doAno.webp);
+    background-size: cover;
+}
+
+.galeryLMGSM-item9{
+    background-image: url(../galeria/fotosLMGSM/Foto_laCuba_6toAno.webp);
     background-size: cover;
 }
 
