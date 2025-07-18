@@ -613,6 +613,13 @@ a.nav__link:hover {
     background-size: cover;
 }
 
+.galeryLMGSM-item10{
+    background-image: url(../galeria/fotosLMGSM/Foto_ViajeRosario_5toAno.webp);
+    background-size: cover;
+}
+
+
+
 .galeryLMGSM-item:hover{
     transform: scale(1.05);
 }
