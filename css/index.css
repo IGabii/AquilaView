@@ -10,7 +10,7 @@ body {
     box-sizing: border-box;
     color:#fff;
     font-family: "over";
-    background: linear-gradient(270deg,#242424,#282828);
+    background: linear-gradient(to bottom, #08081d, #1b2735 70%, #090a0f);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -598,22 +598,6 @@ a.nav__link:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOTOSLMGSM>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .galeryLMGSM-container{
@@ -623,6 +607,11 @@ a.nav__link:hover {
     align-items: center;
     justify-content: space-around;
     gap:30px;
+    height: 120vh;
+}
+
+.space-2daCampana{
+  padding-top: 0px;
 }
 
 .galeryLMGSM-item{
@@ -700,13 +689,37 @@ a.nav__link:hover {
     transform: scale(1.05);
 }
 
+.cursos_2daSalidaAlTerreno{
+  display: flex;
+  justify-content: center;
+}
+
+.galeryLMGSM-2daSalidaAlTerreno{
+  width: 300px;
+  height: 200px;
+}
+
+.galery-2daSalidaAlTerreno{
+  padding: 20px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap:20px;
+}
+
+.galery-2daSalidaAlTerreno a:hover{
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+
 
 
 
 
 /* RESPONSIVE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     body{
         background-image: url(../galeria/fotosLMGSM/Background_celular.webp);
         background-attachment: fixed;
@@ -763,4 +776,13 @@ a.nav__link:hover {
             grid-template-rows: repeat(2,1fr);
             gap:4px;
         }
+    .galery-2daSalidaAlTerreno{
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas:repeat(3,1fr);
+    }
+  
+
+
+
+
 }
