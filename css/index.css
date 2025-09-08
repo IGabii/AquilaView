@@ -677,7 +677,7 @@ a.nav__link:hover {
     background-image: url(../galeria/fotosLMGSM/Foto_laCuba_6toAno.webp);
     background-size: cover;
 }
-
+ca
 .galeryLMGSM-item10{
     background-image: url(../galeria/fotosLMGSM/Foto_ViajeRosario_5toAno.webp);
     background-size: cover;
@@ -716,6 +716,17 @@ a.nav__link:hover {
 .galery-2daSalidaAlTerreno a:hover{
   transform: scale(1.05);
   transition-duration: 1s;
+}
+
+.links-btn{
+  display: flex;
+  justify-content: space-around;
+}
+
+.links-btn a{
+  color:#fff;
+  padding: 10px;
+  border:solid #34f200;
 }
 
 
