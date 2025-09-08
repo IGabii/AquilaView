@@ -683,6 +683,11 @@ a.nav__link:hover {
     background-size: cover;
 }
 
+.galeryLMGSM-item11{
+    background-image: url(../galeria/fotosLMGSM/Foto_2daCampana.webp);
+    background-size: cover;
+}
+
 
 
 .galeryLMGSM-item:hover{
