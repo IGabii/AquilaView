@@ -745,7 +745,7 @@ a.nav__link:hover {
         .fotosCursos-container{
           flex-direction: column;
           width: 90%;
-          height: 82300px;
+          height: 600px;
           margin: 50px auto 100px;
         }
 
