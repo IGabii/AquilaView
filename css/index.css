@@ -599,100 +599,43 @@ a.nav__link:hover {
 
 
 /* FOTOSLMGSM>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-.galeryLMGSM-container{
-    padding: 200PX 20px 10px 20px;
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap:30px;
-    height: 120vh;
+.title-fotosLmgsm{
+  padding-top: 200px;
+  text-align: center;
 }
 
-.space-2daCampana{
-  padding-top: 0px;
+.title-fotosLmgsm h2 {
+  font-size: 40px;
 }
 
-.galeryLMGSM-item{
-    width: 300px;
-    height: 200px;
-    transition: all ease-in .2s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border:solid #fff;
+.fotosCursos-container{
+  margin:100px 0 300px 170px;
+  width: 76%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap:20px
 }
 
-.galeryLMGSM-item h3{
-    margin:4px;
+.fotosCursos-container a{
+  flex:1;
+  height: 100%;
+  transition: all ease-out .5s;
+  overflow: hidden;
 }
 
-.galeryLMGSM-item-a{
-    text-decoration: none;
-    color: #fff;
+.fotosCursos-container a:hover{
+  flex:3;
 }
 
-.galeryLMGSM-item1{
-    background-image: url(../galeria/fotosLMGSM/Foto_1raSalidaTerrano.webp);
-    background-size: cover;
+.fotosCursos-container a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  display: block;
 }
 
-.galeryLMGSM-item2{
-    background-image: url(../galeria/fotosLMGSM/Foto_25deMayo__2doGrado.webp);
-    background-size: cover;
-}
-
-.galeryLMGSM-item3{
-    background-image: url(../galeria/fotosLMGSM/Foto_25deMayo_Jardin.webp);
-    background-size: cover;
-}
-
-.galeryLMGSM-item4{
-    background-image: url(../galeria/fotosLMGSM/Foto_29deMayo.webp);
-    background-size: cover;
-}
-.galeryLMGSM-item5{
-    background-image: url(../galeria/fotosLMGSM/Foto_instruccionPistola_6toAno.webp);
-    background-size: cover;
-}
-
-.galeryLMGSM-item6{
-    background-image: url(../galeria/fotosLMGSM/Foto_JuraBandera_5toAno.webp);
-    background-size: cover;
-}
-
-.galeryLMGSM-item7{
-    background-image: url(../galeria/fotosLMGSM/Foto_PromesaBandera_4toGrado.webp);
-    background-size: cover;
-}
-
-.galeryLMGSM-item8{
-    background-image: url(../galeria/fotosLMGSM/Foto_EntregaDeUniforme_2doAno.webp);
-    background-size: cover;
-}
-
-.galeryLMGSM-item9{
-    background-image: url(../galeria/fotosLMGSM/Foto_laCuba_6toAno.webp);
-    background-size: cover;
-}
-ca
-.galeryLMGSM-item10{
-    background-image: url(../galeria/fotosLMGSM/Foto_ViajeRosario_5toAno.webp);
-    background-size: cover;
-}
-
-.galeryLMGSM-item11{
-    background-image: url(../galeria/fotosLMGSM/Foto_2daCampana.webp);
-    background-size: cover;
-}
-
-
-
-.galeryLMGSM-item:hover{
-    transform: scale(1.05);
-}
 
 .cursos_2daSalidaAlTerreno{
   display: flex;
@@ -794,10 +737,21 @@ ca
             grid-template-rows: repeat(2,1fr);
             gap:4px;
         }
-    .galery-2daSalidaAlTerreno{
-      grid-template-columns: repeat(2,1fr);
-      grid-template-areas:repeat(3,1fr);
-    }
+        .galery-2daSalidaAlTerreno{
+          grid-template-columns: repeat(2,1fr);
+          grid-template-areas:repeat(3,1fr);
+        }
+
+        .fotosCursos-container{
+          flex-direction: column;
+          width: 90%;
+          height: 82300px;
+          margin: 50px auto 100px;
+        }
+
+        .fotosCursos-container a{
+          width: 100%;
+        }
   
 
 

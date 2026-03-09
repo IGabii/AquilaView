@@ -89,3 +89,25 @@ document.addEventListener('keydown', function(e) {
     });
 
     
+window.onload = function() {
+    const contenedor = document.getElementById('contenedor-galeria');
+    
+    // IMPORTANTE: Esta ruta debe subir 3 niveles para llegar a 'galeria'
+    // desde /html/LMGSM/fotosLMGSM/
+    const rutaCarpeta = "../../../galeria/viajeRosario-5toAno/";
+    const totalFotos = 220;
+
+    if (contenedor) {
+        let acumuladorHTML = "";
+        for (let i = 1; i <= totalFotos; i++) {
+            acumuladorHTML += `
+                <div class="foto-item">
+                    <a href="${rutaCarpeta}${i}.jpg" data-lightbox="rosario">
+                        <div class="capa-proteccion">AquilaView</div>
+                        <img src="${rutaCarpeta}${i}.jpg" alt="Foto ${i}" loading="lazy">
+                    </a>
+                </div>`;
+        }
+        contenedor.innerHTML = acumuladorHTML;
+    }
+};
