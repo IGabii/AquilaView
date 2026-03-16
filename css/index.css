@@ -758,3 +758,91 @@ a.nav__link:hover {
 
 
 }
+
+
+.sexto-container{ 
+  padding: 40px;
+  height:120vh;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  gap: 50px
+}
+
+
+
+/* From Uiverse.io by Aryan-81 */ 
+.card {
+  position: relative;
+  width: 390px;
+  height: 190px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.card > div {
+  margin: auto auto;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, rgb(54, 248, 0) 0%, #34f200 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #32c808 0%, #34f200 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+  transition: .2s;
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card p:not(.heading) {
+  font-size: 14px;
+}
+
+.card p:last-child {
+  color: #34f200;
+  font-weight: 600;
+}
+
+.card:hover::after {
+  filter: blur(100px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
