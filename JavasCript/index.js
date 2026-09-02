@@ -111,3 +111,51 @@ window.onload = function() {
         contenedor.innerHTML = acumuladorHTML;
     }
 };
+
+
+
+
+
+//RECUERDO ESCOLAR
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+    const detailView = document.getElementById('detailView');
+    const closeBtn = document.getElementById('closeBtn');
+    
+    // Elementos dentro de la vista de detalle a actualizar
+    const detailImg = document.getElementById('detailImg');
+    const detailTitle = document.getElementById('detailTitle');
+    const detailSubtitle = document.getElementById('detailSubtitle');
+
+    // Función para abrir la vista de detalle
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            // Extraer la información de los atributos "data-"
+            const title = card.getAttribute('data-title');
+            const subtitle = card.getAttribute('data-subtitle');
+            const imgSrc = card.getAttribute('data-img');
+
+            // Actualizar el contenido de la vista expandida
+            detailTitle.textContent = title;
+            detailSubtitle.textContent = subtitle;
+            detailImg.src = imgSrc;
+
+            // Mostrar el modal (dispara la animación CSS)
+            detailView.classList.add('active');
+            
+            // Prevenir que el fondo haga scroll
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Función para cerrar la vista de detalle
+    closeBtn.addEventListener('click', () => {
+        detailView.classList.remove('active');
+        
+        // Restaurar el scroll del fondo
+        document.body.style.overflow = 'auto';
+    });
+});

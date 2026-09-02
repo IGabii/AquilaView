@@ -355,3 +355,47 @@
 	window.GridFx = GridFx;
 
 })(window);
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+    const detailView = document.getElementById('detailView');
+    const closeBtn = document.getElementById('closeBtn');
+    const backBtn = document.getElementById('backBtn');
+    
+    const detailImg = document.getElementById('detailImg');
+    const detailTitle = document.getElementById('detailTitle');
+    const detailSubtitle = document.getElementById('detailSubtitle');
+    const articleText = document.querySelector('.article-text');
+
+    // Evento para abrir el menú
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            const title = card.getAttribute('data-title');
+            const subtitle = card.getAttribute('data-subtitle');
+            const imgSrc = card.getAttribute('data-img');
+            const specificText = card.querySelector('.hidden-content').innerHTML;
+
+            detailTitle.textContent = title;
+            detailSubtitle.textContent = subtitle;
+            detailImg.src = imgSrc;
+            articleText.innerHTML = specificText;
+
+            detailView.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Función para cerrar el menú
+    const closeMenu = () => {
+        detailView.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    };
+
+    closeBtn.addEventListener('click', closeMenu);
+    backBtn.addEventListener('click', closeMenu);
+});
