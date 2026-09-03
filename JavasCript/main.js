@@ -362,7 +362,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.promo-card');
     const detailView = document.getElementById('detailView');
     const closeBtn = document.getElementById('closeBtn');
     const backBtn = document.getElementById('backBtn');
@@ -370,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const detailImg = document.getElementById('detailImg');
     const detailTitle = document.getElementById('detailTitle');
     const detailSubtitle = document.getElementById('detailSubtitle');
-    const articleText = document.querySelector('.article-text');
+    const articleText = document.querySelector('.promo-article-text');
 
     // Evento para abrir el menú
     cards.forEach(card => {
@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const title = card.getAttribute('data-title');
             const subtitle = card.getAttribute('data-subtitle');
             const imgSrc = card.getAttribute('data-img');
-            const specificText = card.querySelector('.hidden-content').innerHTML;
+            const specificText = card.querySelector('.promo-hidden-content').innerHTML;
 
             detailTitle.textContent = title;
             detailSubtitle.textContent = subtitle;
