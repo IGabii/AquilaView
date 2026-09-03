@@ -10,8 +10,7 @@
     <meta name="author" content="Gabriel Alvarez">
     <meta name="robots" content="index">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>AquilaView</title>
-    <!-- GALERIA -->
+    <title>AquilaView - Recuerdo Escolar</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
     <script src="JavasCript/modernizr-custom.js"></script>
@@ -19,99 +18,52 @@
 <body>
     <main class="main">
         <header class="header">
-            <a href="#" class="logo">AQUILAVIEW</a>
-            
-            <input type="checkbox" id="check">
-            
-            <label for="check" class="icons">
-                <span></span>
-                <span></span>   
-                <span></span>
-            </label>
-
-            <nav class="navbar">
-                <a href="index.html" style="--i:1">Inicio</a>
-                <a href="html/LMGSM/fotosLMGSM.html" style="--i:2">Galeria</a>
-                <a href="#" style="--i:5">Contacto</a>
-            </nav>
-        </header>
+        <a href="#" class="logo">AQUILAVIEW</a>
         
-        <!-- PORTFOLIO -------------------------------------------------------------------------------------->
-        <div class="promo-grid-container">
-            <!-- Tarjeta 1 -->
-            <div class="promo-card" data-title="Promoción 1" data-subtitle="Libro Recuerdo Escolar - $30.000" data-img="galeria/recuerdoEscolar/cuadernoPrimaria.jpg">
-                <img src="galeria/recuerdoEscolar/cuadernoPrimaria.jpg" alt="Tristan and Isolde">
-                <div class="promo-card-overlay">
-                    <h2>Promoción 1</h2>
-                    <p>Cuaderno Recuerdo Escolar</p>
-                </div>
-                <div class="promo-hidden-content" style="display: none;">
-                    <p>Incluye:</p>
-                    <ul>
-                        <li>Cuaderno Recuerdo Escolar Laminado</li>
-                        <li>2 Fotos tamaño 21 x 30cm en papel fotográfico (1 Grupal de todo el curso + 1 Individual del alumno).</li>
-                        <li>4 Fotos tamaño 4x4 (Ideales para DNI o carnet)</li>
-                        <li>2 Llaveros de acrílico con foto doble faz del alumno</li>
-                    </ul>
-                </div>
-            </div>
+        <input type="checkbox" id="check">
+        
+        <label for="check" class="icons">
+            <span></span>
+            <span></span>   
+            <span></span>
+        </label>
 
-            <!-- Tarjeta 2 -->
-            <div class="promo-card" data-title="Promoción 2" data-subtitle="Libro Recuerdo Escolar + Bastidor - $55.000" data-img="galeria/recuerdoEscolar/bastidorPrimaria.jpg">
-                <img src="galeria/recuerdoEscolar/bastidorPrimaria.jpg" alt="About Helen">
-                <div class="promo-card-overlay">
-                    <h2>Promoción 2</h2>
-                    <p>Cuaderno Recuerdo Escolar + Bastidor</p>
-                </div>
-                <div class="promo-hidden-content" style="display: none;">
-                    <p>Incluye:</p>
-                    <ul>
-                        <li>Incluye TODO lo de la promoción 1.</li>
-                        <li>+ 1 Cuadro Bastidor de Madera (20 x 30 cm): La foto individual montada en madera rígida, lista para colgar en la pared.</li>
-                        <li>(Si desean el bastidor más grande de 30x40 cm con este combo, el valor total es de $70.000)</li>
-                    </ul>
-                </div>
+        <nav class="navbar">
+            <a href="index.html" style="--i:1">Inicio</a>
+            <a href="html/LMGSM/fotosLMGSM.html" style="--i:2">Galeria</a>
+            <a href="#" style="--i:5">Contacto</a>
+        </nav>
+    </header>
+    <div class="promo-grid-container">
+        <a href="promo1.html" class="promo-card">
+            <img src="galeria/recuerdoEscolar/cuadernoPrimaria.jpg" alt="Promoción 1">
+            <div class="promo-card-overlay">
+                <h2>Promoción 1</h2>
+                <p>Cuaderno Recuerdo Escolar</p>
             </div>
+        </a>
 
-            <!-- Tarjeta 3 -->
-            <div class="promo-card" data-title="Promoción 3" data-subtitle="SOLO CUADRO BASTIDOR" data-img="galeria/recuerdoEscolar/bastidorPrimaria.jpg">
-                <img src="galeria/recuerdoEscolar/bastidorPrimaria.jpg" alt="A mild winter">
-                <div class="promo-card-overlay">
-                    <h2>Promoción 3</h2>
-                    <p>Solo Cuadro Bastidor</p>
-                </div>
-                <div class="promo-hidden-content" style="display: none;">
-                    <ul>
-                        <li>Bastidor de madera tamaño 20x30 cm: $40.000</li>
-                        <li>Bastidor de madera tamaño 30x40 cm: $55.000</li>
-                    </ul>
-                </div>
+        <a href="promo2.html" class="promo-card">
+            <img src="galeria/recuerdoEscolar/bastidorPrimaria.jpg" alt="Promoción 2">
+            <div class="promo-card-overlay">
+                <h2>Promoción 2</h2>
+                <p>Cuaderno Recuerdo Escolar + Bastidor</p>
             </div>
-        </div>
+        </a>
 
-        <!-- Menú desplegable -->
-        <div class="promo-detail-view" id="detailView">
-            <button class="promo-close-btn" id="closeBtn">&times;</button>
-            
-            <div class="promo-detail-hero">
-                <img id="detailImg" src="" alt="Hero Image">
+        <a href="promo3.html" class="promo-card">
+            <img src="galeria/recuerdoEscolar/bastidorPrimaria.jpg" alt="Promoción 3">
+            <div class="promo-card-overlay">
+                <h2>Promoción 3</h2>
+                <p>Solo Cuadro Bastidor</p>
             </div>
-            
-            <div class="promo-detail-content">
-                <button id="backBtn" class="promo-back-btn">← Volver atrás</button>
-                <h1 id="detailTitle">Título</h1>
-                <p id="detailSubtitle" class="promo-detail-subtitle">Subtítulo</p>
-                
-                <!-- Aquí se inyecta el texto oculto de cada tarjeta -->
-                <div class="promo-article-text"></div>
-            </div>
-        </div>
+        </a>
+    </div>
 
-        <script src="JavaScript/imagesloaded.pkgd.min.js"></script>
-        <script src="JavaScript/masonry.pkgd.min.js"></script>
-        <script src="JavaScript/classie.js"></script>
-        <script src="JavaScript/main.js"></script>
-        <script src="JavaScript/index.js"></script>
+    <script src="JavaScript/imagesloaded.pkgd.min.js"></script>
+    <script src="JavaScript/masonry.pkgd.min.js"></script>
+    <script src="JavaScript/classie.js"></script>
+    <script src="JavaScript/main.js"></script>
     </main>
 </body>
 </html>
