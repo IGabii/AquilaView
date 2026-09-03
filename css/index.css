@@ -895,7 +895,7 @@ a {
 
 
 
-/* RECUERDO ESCOLAR */
+/* RECUERDO ESCOLAR////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
 html, body {
@@ -942,7 +942,6 @@ html, body {
     object-fit: cover;
     transition: opacity 0.3s ease;
     opacity: 0.7;
-    pointer-events: none; /* <-- NUEVO: Soluciona el clic en celulares */
 }
 
 .card:hover img {
@@ -957,7 +956,6 @@ html, body {
     padding: 20px;
     background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
     color: white;
-    pointer-events: none; /* <-- NUEVO: Soluciona el clic en celulares */
 }
 
 .card-overlay h2 {
@@ -1116,6 +1114,14 @@ li{
     #detailTitle {
         font-size: 1.8rem;
     }
+}
+
+/* --- SOLUCIÓN CLIC EN MÓVILES --- */
+.card img, 
+.card-overlay,
+.card-overlay h2,
+.card-overlay p {
+    pointer-events: none !important;
 }
 
 
